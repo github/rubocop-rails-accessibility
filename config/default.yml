@@ -1,0 +1,4 @@
+MyExtension/Example:
+  Description: 'TODO: Write a description of the cop.'
+  Enabled: pending
+  VersionAdded: '0.1'
