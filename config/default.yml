@@ -1,4 +1,19 @@
-MyExtension/Example:
-  Description: 'TODO: Write a description of the cop.'
-  Enabled: pending
-  VersionAdded: '0.1'
+require:
+  - rubocop/cop/rubocop_rails_accessibility_cops
+  - rubocop-performance
+
+AllCops:
+  DisabledByDefault: true
+
+RubocopRailsAccessibility/ImageHasAlt:
+  Enabled: true
+  StyleGuide: https://github.com/github/rubocop-rails-accessibility/blob/master/guides/image-has-alt.md
+RubocopRailsAccessibility/LinkHasHref:
+  Enabled: true
+  StyleGuide: https://github.com/github/rubocop-rails-accessibility/blob/master/guides/link-has-href.md
+RubocopRailsAccessibility/NoPositiveTabindex:
+  Enabled: true
+  StyleGuide: https://github.com/github/rubocop-rails-accessibility/blob/master/guides/no-positive-tabindex.md
+RubocopRailsAccessibility/NoRedundantImageAlt:
+  Enabled: true
+  StyleGuide: https://github.com/github/rubocop-rails-accessibility/blob/master/guides/no-redundant-image-alt.md

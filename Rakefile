@@ -1,7 +1,10 @@
 # frozen_string_literal: true
 
 require 'bundler/gem_tasks'
+require 'rake/testtask'
 require 'rspec/core/rake_task'
+
+Rake::TestTask.new
 
 RSpec::Core::RakeTask.new(:spec)
 
@@ -9,7 +12,7 @@ require 'rubocop/rake_task'
 
 RuboCop::RakeTask.new
 
-task default: %i[spec rubocop]
+task default: %i[test rubocop]
 
 desc 'Generate a new cop with a template'
 task :new_cop, [:cop] do |_task, args|
@@ -24,7 +27,7 @@ task :new_cop, [:cop] do |_task, args|
 
   generator.write_source
   generator.write_spec
-  generator.inject_require(root_file_path: 'lib/my_extension.rb')
+  generator.inject_require(root_file_path: 'lib/rubocop-rails-accessibility.rb')
   generator.inject_config(config_file_path: 'config/default.yml')
 
   puts generator.todo

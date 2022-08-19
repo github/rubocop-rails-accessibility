@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in my_extension.gemspec
+# Specify your gem's dependencies in rubocop-rails-accessibility.gemspec
 gemspec
 
 gem 'rake', '~> 13.0'

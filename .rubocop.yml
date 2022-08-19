@@ -3,8 +3,7 @@ AllCops:
   SuggestExtensions: false
   TargetRubyVersion: 2.6
 
-Metrics:
-  Enabled: false
-
-Style/Documentation:
-  Enabled: false
+Naming/FileName:
+  Enabled: true
+  Exclude:
+    - "rubocop-rails-accessibility.gemspec"
