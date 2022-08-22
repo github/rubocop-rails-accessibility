@@ -1,6 +1,5 @@
 require:
   - rubocop/cop/rubocop_rails_accessibility_cops
-  - rubocop-performance
 
 AllCops:
   DisabledByDefault: true

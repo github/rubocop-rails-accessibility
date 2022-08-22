@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-require 'rubocop'
+require "rubocop"
 
 module RuboCop
   module Cop
     module RubocopRailsAccessibility
       class ImageHasAlt < Base
-        MSG = 'Images should have an alt prop with meaningful text or an empty string for decorative images'
+        MSG = "Images should have an alt prop with meaningful text or an empty string for decorative images"
 
-        def_node_search :has_alt_attribute?, '(sym :alt)'
+        def_node_search :has_alt_attribute?, "(sym :alt)"
 
         def on_send(node)
           receiver, method_name, = *node

@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-require 'rubocop'
+require "rubocop"
 
 module RuboCop
   module Cop
     module RubocopRailsAccessibility
       class NoPositiveTabindex < Base
-        MSG = 'Positive tabindex is error-prone and often inaccessible.'
+        MSG = "Positive tabindex is error-prone and often inaccessible."
 
         def on_send(node)
           receiver, _method_name, *args = *node

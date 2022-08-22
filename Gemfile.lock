@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     rubocop-rails-accessibility (0.1.0)
-      rubocop
+      rubocop (>= 1.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -31,12 +31,15 @@ GEM
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     minitest (5.16.3)
+    nokogiri (1.13.8-x86_64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.8-x86_64-linux)
       racc (~> 1.4)
     parallel (1.22.1)
     parser (3.1.2.0)
       ast (~> 2.4.1)
     racc (1.6.0)
+    rack (2.2.4)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -71,12 +74,24 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.19.1)
       parser (>= 3.1.1.0)
+    rubocop-github (0.18.0)
+      rubocop (>= 1.0.0)
+      rubocop-performance
+      rubocop-rails
+    rubocop-performance (1.14.3)
+      rubocop (>= 1.7.0, < 2.0)
+      rubocop-ast (>= 0.4.0)
+    rubocop-rails (2.15.2)
+      activesupport (>= 4.2.0)
+      rack (>= 1.1)
+      rubocop (>= 1.7.0, < 2.0)
     ruby-progressbar (1.11.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.2.0)
 
 PLATFORMS
+  x86_64-darwin-19
   x86_64-linux
 
 DEPENDENCIES
@@ -84,7 +99,9 @@ DEPENDENCIES
   minitest
   rake (~> 13.0)
   rspec (~> 3.0)
-  rubocop (~> 1.21)
+  rubocop-github
+  rubocop-performance
+  rubocop-rails
   rubocop-rails-accessibility!
 
 BUNDLED WITH
