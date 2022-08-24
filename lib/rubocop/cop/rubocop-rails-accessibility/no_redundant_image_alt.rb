@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-require 'rubocop'
+require "rubocop"
 
 module RuboCop
   module Cop
     module RubocopRailsAccessibility
       class NoRedundantImageAlt < Base
-        MSG = 'Alt prop should not contain `image` or `picture` as screen readers already announce the element as an image'
+        MSG = "Alt prop should not contain `image` or `picture` as screen readers already announce the element as an image"
         REDUNDANT_ALT_WORDS = %w[image picture].freeze
 
-        def_node_search :redundant_alt?, '(pair (sym :alt) (str #contains_redundant_alt_text?))'
+        def_node_search :redundant_alt?, "(pair (sym :alt) (str #contains_redundant_alt_text?))"
 
         def on_send(node)
           receiver, method_name, = *node

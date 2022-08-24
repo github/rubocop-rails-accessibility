@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative './cop_test'
-require 'minitest/autorun'
-require 'rubocop/cop/rubocop-rails-accessibility/no_positive_tabindex'
+require_relative "./cop_test"
+require "minitest/autorun"
+require "rubocop/cop/rubocop-rails-accessibility/no_positive_tabindex"
 
 class NoPositiveTabindex < CopTest
   def cop_class
@@ -10,16 +10,16 @@ class NoPositiveTabindex < CopTest
   end
 
   def test_no_positive_tabindex_alt_offense
-    offenses = erb_investigate cop, <<-ERB, 'app/views/products/index.html.erb'
+    offenses = erb_investigate cop, <<-ERB, "app/views/products/index.html.erb"
       <%= button_tag "Continue", :tabindex => 3 %>
     ERB
 
     assert_equal 1, offenses.count
-    assert_equal 'Positive tabindex is error-prone and often inaccessible.', offenses[0].message
+    assert_equal "Positive tabindex is error-prone and often inaccessible.", offenses[0].message
   end
 
   def test_no_positive_tabindex_alt_no_offense
-    offenses = erb_investigate cop, <<-ERB, 'app/views/products/index.html.erb'
+    offenses = erb_investigate cop, <<-ERB, "app/views/products/index.html.erb"
        <%= button_tag "Continue", :tabindex => -1 %>
     ERB
 
