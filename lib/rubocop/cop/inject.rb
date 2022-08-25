@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require 'rubocop'
+require "rubocop"
 
 # The original code is from https://github.com/rubocop/rubocop-rspec/blob/main/lib/rubocop/rspec/inject.rb
 # See https://github.com/rubocop/rubocop-rspec/blob/main/MIT-LICENSE.md
-module MyExtension
+module RubocopRailsAccessibility
   module Inject
     def self.defaults!
       path = CONFIG_DEFAULT.to_s

@@ -1,18 +1,50 @@
 PATH
   remote: .
   specs:
-    my_extension (0.1.0)
-      rubocop
+    rubocop-rails-accessibility (0.1.0)
+      rubocop (>= 1.0.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    actionview (7.0.3.1)
+      activesupport (= 7.0.3.1)
+      builder (~> 3.1)
+      erubi (~> 1.4)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    activesupport (7.0.3.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
     ast (2.4.2)
+    builder (3.2.4)
+    concurrent-ruby (1.1.10)
+    crass (1.0.6)
     diff-lcs (1.5.0)
+    erubi (1.11.0)
+    i18n (1.12.0)
+      concurrent-ruby (~> 1.0)
     json (2.6.2)
+    loofah (2.18.0)
+      crass (~> 1.0.2)
+      nokogiri (>= 1.5.9)
+    minitest (5.16.3)
+    nokogiri (1.13.8-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.13.8-x86_64-linux)
+      racc (~> 1.4)
     parallel (1.22.1)
     parser (3.1.2.0)
       ast (~> 2.4.1)
+    racc (1.6.0)
+    rack (2.2.4)
+    rails-dom-testing (2.0.3)
+      activesupport (>= 4.2.0)
+      nokogiri (>= 1.6)
+    rails-html-sanitizer (1.4.3)
+      loofah (~> 2.3)
     rainbow (3.1.1)
     rake (13.0.6)
     regexp_parser (2.5.0)
@@ -42,17 +74,35 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.19.1)
       parser (>= 3.1.1.0)
+    rubocop-github (0.18.0)
+      rubocop (>= 1.0.0)
+      rubocop-performance
+      rubocop-rails
+    rubocop-performance (1.14.3)
+      rubocop (>= 1.7.0, < 2.0)
+      rubocop-ast (>= 0.4.0)
+    rubocop-rails (2.15.2)
+      activesupport (>= 4.2.0)
+      rack (>= 1.1)
+      rubocop (>= 1.7.0, < 2.0)
     ruby-progressbar (1.11.0)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
     unicode-display_width (2.2.0)
 
 PLATFORMS
+  x86_64-darwin-19
   x86_64-linux
 
 DEPENDENCIES
-  my_extension!
+  actionview
+  minitest
   rake (~> 13.0)
   rspec (~> 3.0)
-  rubocop (~> 1.21)
+  rubocop-github
+  rubocop-performance
+  rubocop-rails
+  rubocop-rails-accessibility!
 
 BUNDLED WITH
    2.3.17

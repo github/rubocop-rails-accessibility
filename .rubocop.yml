@@ -1,10 +1,9 @@
-AllCops:
-  NewCops: enable
-  SuggestExtensions: false
-  TargetRubyVersion: 2.6
+inherit_gem:
+  rubocop-github:
+    - config/default.yml
+    - config/rails.yml
 
-Metrics:
-  Enabled: false
-
-Style/Documentation:
-  Enabled: false
+Naming/FileName:
+  Enabled: true
+  Exclude:
+    - "rubocop-rails-accessibility.gemspec"
