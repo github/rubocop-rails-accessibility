@@ -35,9 +35,9 @@ inherit_gem:
 
 Install all of the required gems
 
-```sh[]
+```sh
 bundle install
-```[]
+```
 
 Run the tests
 
