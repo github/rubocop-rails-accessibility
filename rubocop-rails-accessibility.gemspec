@@ -5,11 +5,11 @@ require_relative "lib/rubocop/cop/version"
 Gem::Specification.new do |spec|
   spec.name = "rubocop-rails-accessibility"
   spec.version = RubocopRailsAccessibility::VERSION
-  spec.authors = ["dummy"]
-  spec.email = ["dummy@example.com"]
+  spec.authors = ["GitHub Accessibility Team"]
+  spec.email = ["accessibility@github.com"]
 
   spec.summary = "Custom extension for RuboCop."
-  spec.homepage = "https://github.com/dummy/rubocop-rails-accessibility"
+  spec.homepage = "https://github.com/github/rubocop-rails-accessibility"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.7.0"
 
