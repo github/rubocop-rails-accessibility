@@ -28,7 +28,6 @@ Put this into your `.rubocop.yml`.
 inherit_gem:
   rubocop-rails-accessibility:
     - config/default.yml
-    - config/rubocop_rails_accessibility.yml
 ```
 
 ## Testing
