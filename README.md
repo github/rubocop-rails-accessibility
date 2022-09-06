@@ -47,7 +47,7 @@ bundle exec rake
 ## The Cops
 
 All cops are located under
-[`lib/rubocop/cop/rubocop_rails_accessibility`](lib/rubocop/cop/rubocop_rails_accessibility), and contain
+[`lib/rubocop/cop/rubocop-rails-accessibility`](lib/rubocop/cop/rubocop-rails-accessibility), and contain
 examples/documentation.
 
 ## Rules
