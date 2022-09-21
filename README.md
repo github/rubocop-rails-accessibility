@@ -53,7 +53,6 @@ examples/documentation.
 ## Rules
 
 - [RuboCop::Cop::Accessibility::ImageHasAlt](guides/image-has-alt.md)
-- [RuboCop::Cop::Accessibility::LinkHasHref](guides/link-has-href.md)
 - [RuboCop::Cop::Accessibility::NoPositiveTabindex](guides/no-positive-tabindex.md)
 - [RuboCop::Cop::Accessibility::NoRedundantImageAlt](guides/no-redundant-image-alt.md)
 
