@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-require_relative "lib/rubocop/cop/version"
+require_relative "lib/rubocop/rails_accessibility/version"
 
 Gem::Specification.new do |spec|
   spec.name = "rubocop-rails-accessibility"
-  spec.version = RubocopRailsAccessibility::VERSION
+  spec.version = RuboCop::RailsAccessibility::VERSION
   spec.authors = ["GitHub Accessibility Team"]
   spec.email = ["accessibility@github.com"]
 
-  spec.summary = "Custom extension for RuboCop."
+  spec.summary = "Custom RuboCop rules for Rails Accessibility."
   spec.homepage = "https://github.com/github/rubocop-rails-accessibility"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.7.0"
@@ -28,14 +28,14 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rubocop-rails"
   spec.add_development_dependency "rubocop-performance"
 
-  # Specify which files should be added to the gem when it is released.
-  # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
-  spec.files = Dir.chdir(File.expand_path(__dir__)) do
-    `git ls-files -z`.split("\x0").reject do |f|
-      (f == __FILE__) || f.match(%r{\A(?:(?:bin|test|spec|features)/|\.(?:git|travis|circleci)|appveyor)})
-    end
-  end
-  spec.bindir = "exe"
-  spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
+  spec.files = Dir[
+    "config/*.yml",
+    "guides/*.md",
+    "lib/**/*.rb",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "README.md",
+  ]
+
   spec.require_paths = ["lib"]
 end

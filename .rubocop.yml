@@ -1,3 +1,6 @@
+require:
+  - rubocop-rails-accessibility
+
 inherit_gem:
   rubocop-github:
     - config/default.yml
@@ -7,3 +10,4 @@ Naming/FileName:
   Enabled: true
   Exclude:
     - "rubocop-rails-accessibility.gemspec"
+    - "lib/rubocop-rails-accessibility.rb"

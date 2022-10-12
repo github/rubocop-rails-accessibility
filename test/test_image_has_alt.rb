@@ -2,11 +2,11 @@
 
 require_relative "./cop_test"
 require "minitest/autorun"
-require "rubocop/cop/rubocop-rails-accessibility/image_has_alt"
+require "rubocop/cop/rails_accessibility/image_has_alt"
 
 class TestImageHasAlt < CopTest
   def cop_class
-    RuboCop::Cop::RubocopRailsAccessibility::ImageHasAlt
+    RuboCop::Cop::RailsAccessibility::ImageHasAlt
   end
 
   def test_image_has_alt_offense

@@ -31,6 +31,8 @@ GEM
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     minitest (5.16.3)
+    nokogiri (1.13.8-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.8-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.13.8-x86_64-linux)
@@ -91,6 +93,7 @@ GEM
     unicode-display_width (2.2.0)
 
 PLATFORMS
+  arm64-darwin-21
   x86_64-darwin-19
   x86_64-linux
 
@@ -105,4 +108,4 @@ DEPENDENCIES
   rubocop-rails-accessibility!
 
 BUNDLED WITH
-   2.3.17
+   2.3.22

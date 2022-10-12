@@ -1,4 +1,4 @@
-# RubocopRailsAccessibility/ImageHasAlt
+# RailsAccessibility/ImageHasAlt
 
 ## Rule Details
 

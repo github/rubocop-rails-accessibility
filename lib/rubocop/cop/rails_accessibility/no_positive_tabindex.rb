@@ -4,7 +4,7 @@ require "rubocop"
 
 module RuboCop
   module Cop
-    module RubocopRailsAccessibility
+    module RailsAccessibility
       class NoPositiveTabindex < Base
         MSG = "Positive tabindex is error-prone and often inaccessible."
 
