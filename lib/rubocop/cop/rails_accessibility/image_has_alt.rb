@@ -4,7 +4,7 @@ require "rubocop"
 
 module RuboCop
   module Cop
-    module RubocopRailsAccessibility
+    module RailsAccessibility
       class ImageHasAlt < Base
         MSG = "Images should have an alt prop with meaningful text or an empty string for decorative images"
 

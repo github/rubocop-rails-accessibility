@@ -1,15 +1,11 @@
-require:
-  - rubocop/cop/rubocop_rails_accessibility_cops
-
-AllCops:
-  DisabledByDefault: true
-
-RubocopRailsAccessibility/ImageHasAlt:
+RailsAccessibility/ImageHasAlt:
   Enabled: true
   StyleGuide: https://github.com/github/rubocop-rails-accessibility/blob/master/guides/image-has-alt.md
-RubocopRailsAccessibility/NoPositiveTabindex:
+
+RailsAccessibility/NoPositiveTabindex:
   Enabled: true
   StyleGuide: https://github.com/github/rubocop-rails-accessibility/blob/master/guides/no-positive-tabindex.md
-RubocopRailsAccessibility/NoRedundantImageAlt:
+
+RailsAccessibility/NoRedundantImageAlt:
   Enabled: true
   StyleGuide: https://github.com/github/rubocop-rails-accessibility/blob/master/guides/no-redundant-image-alt.md

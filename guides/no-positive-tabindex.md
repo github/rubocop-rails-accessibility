@@ -1,4 +1,4 @@
-# RubocopRailsAccessibility/NoPositiveTabindex
+# RailsAccessibility/NoPositiveTabindex
 
 ## Rule Details
 

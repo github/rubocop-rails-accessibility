@@ -4,7 +4,7 @@ require "rubocop"
 
 module RuboCop
   module Cop
-    module RubocopRailsAccessibility
+    module RailsAccessibility
       class NoRedundantImageAlt < Base
         MSG = "Alt prop should not contain `image` or `picture` as screen readers already announce the element as an image"
         REDUNDANT_ALT_WORDS = %w[image picture].freeze

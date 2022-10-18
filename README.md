@@ -25,9 +25,8 @@ You need to tell RuboCop to load RuboCop Rails Accessibility.
 Put this into your `.rubocop.yml`.
 
 ``` yaml
-inherit_gem:
-  rubocop-rails-accessibility:
-    - config/default.yml
+require:
+  - rubocop-rails-accessibility
 ```
 
 ## Testing
@@ -47,14 +46,14 @@ bundle exec rake
 ## The Cops
 
 All cops are located under
-[`lib/rubocop/cop/rubocop-rails-accessibility`](lib/rubocop/cop/rubocop-rails-accessibility), and contain
+[`lib/rubocop/cop/rails_accessibility`](lib/rubocop/cop/rails_accessibility), and contain
 examples/documentation.
 
 ## Rules
 
-- [RuboCop::Cop::Accessibility::ImageHasAlt](guides/image-has-alt.md)
-- [RuboCop::Cop::Accessibility::NoPositiveTabindex](guides/no-positive-tabindex.md)
-- [RuboCop::Cop::Accessibility::NoRedundantImageAlt](guides/no-redundant-image-alt.md)
+- [RailsAccessibility/ImageHasAlt](guides/image-has-alt.md)
+- [RailsAccessibility/NoPositiveTabindex](guides/no-positive-tabindex.md)
+- [RailsAccessibility/NoRedundantImageAlt](guides/no-redundant-image-alt.md)
 
 ## Contributing
 

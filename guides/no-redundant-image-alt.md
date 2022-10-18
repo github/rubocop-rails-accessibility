@@ -1,4 +1,4 @@
-# RubocopRailsAccessibility/NoRedundantImageAlt
+# RailsAccessibility/NoRedundantImageAlt
 
 ## Rule Details
 

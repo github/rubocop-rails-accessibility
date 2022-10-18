@@ -2,11 +2,11 @@
 
 require_relative "./cop_test"
 require "minitest/autorun"
-require "rubocop/cop/rubocop-rails-accessibility/no_positive_tabindex"
+require "rubocop/cop/rails_accessibility/no_positive_tabindex"
 
 class NoPositiveTabindex < CopTest
   def cop_class
-    RuboCop::Cop::RubocopRailsAccessibility::NoPositiveTabindex
+    RuboCop::Cop::RailsAccessibility::NoPositiveTabindex
   end
 
   def test_no_positive_tabindex_alt_offense
