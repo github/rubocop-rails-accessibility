@@ -41,7 +41,7 @@ GEM
     parser (3.1.2.0)
       ast (~> 2.4.1)
     racc (1.7.1)
-    rack (2.2.4)
+    rack (3.0.8)
     rails-dom-testing (2.2.0)
       activesupport (>= 5.0.0)
       minitest
