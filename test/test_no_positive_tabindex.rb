@@ -15,7 +15,7 @@ class NoPositiveTabindex < CopTest
     ERB
 
     assert_equal 1, offenses.count
-    assert_equal "Positive tabindex is error-prone and often inaccessible.", offenses[0].message
+    assert_equal "RailsAccessibility/NoPositiveTabindex: Positive tabindex is error-prone and often inaccessible.", offenses[0].message
   end
 
   def test_no_positive_tabindex_alt_no_offense

@@ -11,13 +11,13 @@ class CopTest < Minitest::Test
   attr_reader :cop
 
   def setup
-    config = RuboCop::Config.new
-    @cop = cop_class.new(config)
+    @config = RuboCop::Config.new
+    @cop = cop_class.new(@config)
   end
 
   def investigate(cop, src, filename = nil)
     processed_source = RuboCop::ProcessedSource.new(src, RUBY_VERSION.to_f, filename)
-    team = RuboCop::Cop::Team.new([cop], nil, raise_error: true)
+    team = RuboCop::Cop::Team.new([cop], @config, raise_error: true)
     report = team.investigate(processed_source)
     report.offenses
   end
