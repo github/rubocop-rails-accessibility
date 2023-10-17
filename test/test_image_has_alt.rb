@@ -15,7 +15,7 @@ class TestImageHasAlt < CopTest
     ERB
 
     assert_equal 1, offenses.count
-    assert_equal "Images should have an alt prop with meaningful text or an empty string for decorative images",
+    assert_equal "RailsAccessibility/ImageHasAlt: Images should have an alt prop with meaningful text or an empty string for decorative images",
                  offenses[0].message
   end
 

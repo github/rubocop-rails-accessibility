@@ -15,7 +15,7 @@ class NoRedundantImageAlt < CopTest
     ERB
 
     assert_equal 1, offenses.count
-    assert_equal "Alt prop should not contain `image` or `picture` as screen readers already announce the element as an image",
+    assert_equal "RailsAccessibility/NoRedundantImageAlt: Alt prop should not contain `image` or `picture` as screen readers already announce the element as an image",
                  offenses[0].message
   end
 
