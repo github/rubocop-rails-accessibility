@@ -52,7 +52,7 @@ GEM
       loofah (~> 2.21)
       nokogiri (~> 1.14)
     rainbow (3.1.1)
-    rake (13.0.6)
+    rake (13.1.0)
     regexp_parser (2.8.3)
     rexml (3.2.6)
     rspec (3.12.0)
