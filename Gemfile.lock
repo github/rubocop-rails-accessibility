@@ -41,7 +41,7 @@ GEM
     loofah (2.21.4)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
-    minitest (5.20.0)
+    minitest (5.21.1)
     mutex_m (0.2.0)
     nokogiri (1.15.4-arm64-darwin)
       racc (~> 1.4)
