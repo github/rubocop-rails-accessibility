@@ -53,7 +53,7 @@ GEM
       ast (~> 2.4.1)
       racc
     racc (1.8.0)
-    rack (3.0.10)
+    rack (3.0.11)
     rails-dom-testing (2.2.0)
       activesupport (>= 5.0.0)
       minitest
@@ -63,7 +63,7 @@ GEM
       nokogiri (~> 1.14)
     rainbow (3.1.1)
     rake (13.2.1)
-    regexp_parser (2.9.1)
+    regexp_parser (2.9.2)
     rexml (3.2.8)
       strscan (>= 3.0.9)
     rspec (3.13.0)
@@ -99,7 +99,7 @@ GEM
     rubocop-performance (1.21.0)
       rubocop (>= 1.48.1, < 2.0)
       rubocop-ast (>= 1.31.1, < 2.0)
-    rubocop-rails (2.24.1)
+    rubocop-rails (2.25.0)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.33.0, < 2.0)
