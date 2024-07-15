@@ -53,7 +53,7 @@ GEM
       ast (~> 2.4.1)
       racc
     racc (1.8.0)
-    rack (3.1.4)
+    rack (3.1.7)
     rails-dom-testing (2.2.0)
       activesupport (>= 5.0.0)
       minitest
@@ -112,6 +112,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  arm64-darwin-23
   x86_64-darwin-19
   x86_64-darwin-21
   x86_64-linux
