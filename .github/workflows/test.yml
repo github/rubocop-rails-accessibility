@@ -6,6 +6,10 @@ on:
       - main
   pull_request:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
+      uses: ruby/setup-ruby@a6e6f86333f0a2523ece813039b8b4be04560854
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
